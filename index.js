@@ -105,10 +105,12 @@ class AsyncPool extends EventEmitter {
     if (this._queue.length !== 0 && this._draining === false) {
       const nextTask = this._queue.shift()
 
-      if (nextTask) {
-        this._run(nextTask)
-      }
-    } else if (this._flushing === false) {
+      if (nextTask) this._run(nextTask)
+    } else if (
+      this._flushing === false &&
+      this._queue.length === 0 &&
+      this._running.size === 0
+    ) {
       this.emit('idle')
     }
   }
