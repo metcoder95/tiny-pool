@@ -2,9 +2,10 @@
 const { EventEmitter } = require('node:events')
 
 class AsyncPool extends EventEmitter {
-  constructor ({ maxConcurrent = 5, maxEnqueued = 10 }) {
+  constructor (options = { maxConcurrent: 5, maxEnqueued: 10 }) {
     super()
 
+    const { maxConcurrent, maxEnqueued } = options
     this.maxConcurrent = maxConcurrent
     this.maxEnqueued = maxEnqueued
     this._queue = []
