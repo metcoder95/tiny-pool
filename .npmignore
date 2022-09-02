@@ -1,3 +1,4 @@
+
 # Logs
 logs
 *.log
@@ -103,4 +104,8 @@ dist
 # TernJS port file
 .tern-port
 
+# As is a package, the lockfile is not needed
 package-lock.json
+.github
+.husky
+tsconfig.json
