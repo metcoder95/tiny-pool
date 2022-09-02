@@ -1,37 +1,41 @@
 {
-  "name": "<lib_name>",
+  "name": "@metcoder95/tiny-pool",
   "version": "0.0.0",
-  "description": "<description>",
+  "description": "Extremely simplistic and tiny AsyncPool for limiting concurrency of async operations",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "tap --cov test/*.test.js && npm run typescript",
-    "test:ci": "tap --cov test/*.test.js && npm run typescript && npm run lint",
+    "test": "tap --cov test/**/*.test.js && npm run test:ts && npm run lint",
+    "test:ci": "tap --cov test/**/*.test.js && npm run test:ts && npm run lint:ci",
     "test:only": "tap --only",
     "test:unit": "tap test/*.test.js",
+    "test:ts": "tsd",
     "lint": "standard | snazzy",
     "lint:ci": "standard",
-    "typescript": "tsd"
+    "release": "npx standard-version"
   },
-  "keywords": [],
+  "keywords": ["async-pool", "pool", "tiny", "tiny-async-pool", "tiny-pool"],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metcoder95/<lib_name>.git"
+    "url": "git+https://github.com/metcoder95/tiny-pool.git"
   },
-  "readme": "https://github.com/metcoder95/<lib_name>/blob/main/README.md",
+  "readme": "https://github.com/metcoder95/tiny-pool/blob/main/README.md",
   "bugs": {
-    "url": "https://github.com/metcoder95/<lib_name>/issues"
+    "url": "https://github.com/metcoder95/tiny-pool/issues"
   },
   "author": "metcoder95 <me@metcoder.dev>",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^14.17.6",
+    "@types/node": "^16",
     "husky": "^7.0.2",
     "snazzy": "^9.0.0",
     "standard": "^16.0.3",
     "tap": "^15.0.10",
     "tsd": "^0.17.0",
     "typescript": "^4.4"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   },
   "dependencies": {
   },
