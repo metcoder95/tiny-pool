@@ -14,7 +14,13 @@
     "lint:ci": "standard",
     "release": "npx standard-version"
   },
-  "keywords": ["async-pool", "pool", "tiny", "tiny-async-pool", "tiny-pool"],
+  "keywords": [
+    "async-pool",
+    "pool",
+    "tiny",
+    "tiny-async-pool",
+    "tiny-pool"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/metcoder95/tiny-pool.git"
@@ -36,9 +42,7 @@
     "typescript": "^4.4"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
-  },
-  "dependencies": {
+    "registry": "https://npm.pkg.github.com"
   },
   "tsd": {
     "directory": "test"
