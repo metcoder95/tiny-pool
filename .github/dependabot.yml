@@ -1,0 +1,1 @@
+@dependabot squash and merge
