@@ -14,8 +14,8 @@
     "lint:ci": "standard",
     "release": "npx standard-version"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+  "engines": {
+    "node": ">=16.x"
   },
   "keywords": [
     "async-pool",
