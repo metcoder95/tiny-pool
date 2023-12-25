@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/metcoder95/tiny-pool/compare/v3.0.0...v4.0.0) (2023-12-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for older Node
+
+### Features
+
+* drop support for older Node ([4ed1bd4](https://github.com/metcoder95/tiny-pool/commit/4ed1bd44901aa93839ba6a8f3ce58887ff8f9a62))
+
 ## [3.0.0](https://github.com/metcoder95/tiny-pool/compare/v2.0.0...v3.0.0) (2023-05-18)
 
 

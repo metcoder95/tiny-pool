@@ -1,6 +1,6 @@
 {
   "name": "@metcoder95/tiny-pool",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Extremely simplistic and tiny AsyncPool for limiting concurrency of async operations",
   "main": "index.js",
   "types": "index.d.ts",
